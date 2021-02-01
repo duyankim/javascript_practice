@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+  <body>
+    <div id="app"></div>
+    <h1>모달창 만들기</h1>
 
-<body>
-	<div id="app"></div>
+    <div class="subscribe-section">
+      <h2>This is modal</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias,
+        illo. Sunt odit architecto veritatis tenetur deserunt faci
+      </p>
+      <button class="modal-btn">Modal</button>
+    </div>
 
-	<script src="src/index.js">
-	</script>
-</body>
+    <div class="modal-bg">
+      <div class="modal">
+        <h2>구독하기</h2>
+        <label for="name">이름: </label>
+        <input type="text" name="name" />
+        <label for="email">이메일: </label>
+        <input type="email" name="email" />
+        <button class="subscribe">구독하기</button>
+        <span class="modal-close">X</span>
+      </div>
+    </div>
 
+    <script src="src/index.js"></script>
+  </body>
 </html>

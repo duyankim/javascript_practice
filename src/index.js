@@ -1,10 +1,11 @@
-import "./styles.css";
+const modalBtn = document.querySelector(".modal-btn");
+const modalBg = document.querySelector(".modal-bg");
+const modalClose = document.querySelector(".modal-close");
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+modalBtn.addEventListener("click", () => {
+  modalBg.classList.add("bg-active");
+});
+
+modalClose.addEventListener("click", () => {
+  modalBg.classList.remove("bg-active");
+});
